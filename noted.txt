@@ -1,0 +1,60 @@
+yang udah :
+1. setup awal dengan nuxt js
+-manage : npm run dev
+
+2. cari keywoard untuk judul, meta description, h1 dan h2
+- judul : Menara Bekasi | Efisiensi Pengiriman dan Pengemasan Kayu Ekspor: Tips Menghemat Biaya & Waktu
+- h1 : Efisiensi Pengiriman dan Pengemasan Kayu Ekspor: Tips Menghemat Biaya & Waktu
+- h2 :
+#1: Pentingnya Efisiensi dalam Pengiriman Kayu Ekspor
+#2: Strategi Efisiensi Pengiriman Kayu Ekspor
+#3: Teknik Pengemasan Kayu Ekspor yang Tepat
+#4: Tips Menghemat Biaya dan Waktu dalam Logistik Kayu Ekspor
+- meta description : 
+"Pelajari cara efisiensi pengiriman dan pengemasan kayu ekspor untuk menghemat biaya dan waktu bersama PT Menara Bekasi, mitra terpercaya ekspor kayu Indonesia."
+- deskripsi singkat :
+“PT Menara Bekasi menghadirkan solusi efisien dalam pengiriman dan pengemasan kayu ekspor. Hemat waktu, kurangi biaya, dan tingkatkan daya saing bisnis Anda di pasar global.”
+- tagline :
+#EFESIENSIEKSPORKAYU
+
+
+
+
+
+
+3. buat web dan kompress gambar + alt gambar
+
+4. web responsif
+
+5. menambah rel="noopener noreferrer" untuk keamanan link
+
+6. cta
+https://wa.me/6285817298071
+https://menarabekasilestari.site/
+
+7. hosting web
+https://blogwebmenara.vercel.app/
+
+https://github.com/muqniansyah/blogwebmenara
+
+8. google analytics
+
+9. google search console
+
+10. membuat swiper atau carousel slide untuk backlink seo
+
+11. sharing button bar
+
+10. memasukkan keywoard json
+
+11. buat file sitemap.xml dan robots.txt
+
+12. uji url sudah aktif
+https://blogwebmenara.vercel.app/
+
+13. uji url sitemap sudah aktif
+https://blogwebmenara.vercel.app/sitemap.xml
+
+14. menambah headers keamanan
+
+15. lakukan minify file (belum)
