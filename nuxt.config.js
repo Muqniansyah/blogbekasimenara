@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ["~/assets/css/style.css"],
+  css: [
+    "~/assets/css/style.css",
+    "swiper/css",
+    "swiper/css/navigation",
+    "swiper/css/pagination",
+  ],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
@@ -17,6 +22,10 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/png", href: "/logo.png" }, // favicon di /public/
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
+        },
       ],
     },
   },

@@ -17,11 +17,6 @@ yang udah :
 - tagline :
 #EFESIENSIEKSPORKAYU
 
-
-
-
-
-
 3. buat web dan kompress gambar + alt gambar
 
 4. web responsif
@@ -31,6 +26,9 @@ yang udah :
 6. cta
 https://wa.me/6285817298071
 https://menarabekasilestari.site/
+
+
+
 
 7. hosting web
 https://blogwebmenara.vercel.app/

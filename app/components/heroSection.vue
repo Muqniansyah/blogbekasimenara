@@ -14,7 +14,14 @@
           </p>
 
           <div class="hero-buttons">
-            <button class="btn-primary">Pelajari Lebih Lanjut</button>
+            <a
+              href="https://menarabekasilestari.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              Pelajari Lebih Lanjut
+            </a>
           </div>
         </div>
 
@@ -101,6 +108,7 @@
 }
 
 .btn-primary {
+  display: inline-block;
   padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 12px;
@@ -109,6 +117,8 @@
   transition: all 0.3s ease;
   background: linear-gradient(135deg, #f2994a, #f2c94c);
   color: #1a1a1a;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn-primary:hover {
