@@ -16,6 +16,7 @@
         v-for="(item, index) in slides"
         :key="index"
         class="slide-card"
+        @click="openLink(item.link)"
       >
         <div class="image-wrapper">
           <div class="step-number">{{ index + 1 }}</div>
@@ -44,19 +45,26 @@ const slides = [
     img: "/slider/kemas.png",
     title: "Website Resmi PT.Kemas Kayu Indonesia",
     desc: "“Kami selalu memastikan kualitas kayu sesuai standar internasional.”",
+    link: "https://menarabekasilestari.site/",
   },
   {
     img: "/slider/menarabekasi.png",
     title: "Pastikan Pallet Anda Siap Kirim Tanpa Risiko!",
     desc: "“Kerjasama hanya dengan vendor terpercaya & berpengalaman.”",
+    link: "https://kemaskayuindonesia.my.id/menarabekasi/",
   },
   {
     img: "/slider/kemaskayu.png",
     title:
       "Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar ISPM #15!",
     desc: "“Pastikan kemasan kayu Anda sudah sesuai aturan internasional agar ekspor tidak bermasalah.”",
+    link: "https://kemaskayuindonesia.my.id/",
   },
 ];
+
+function openLink(url) {
+  if (url) window.open(url, "_blank", "noopener noreferrer");
+}
 </script>
 
 <style scoped>
@@ -143,6 +151,9 @@ const slides = [
   text-align: left;
   width: 100%;
   padding: 0 10px;
+  overflow: visible;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .caption-title {
@@ -187,6 +198,7 @@ const slides = [
 @media (min-width: 768px) {
   /* Pada desktop, buat slide menjadi tata letak sampingan untuk kesan kartu yang lebih besar */
   .slide-card {
+    cursor: pointer;
     flex-direction: row;
     text-align: left;
     align-items: stretch;

@@ -18,7 +18,7 @@
 
         <div class="share-buttons">
           <a
-            href="https://www.facebook.com/sharer/sharer.php?u=https://menarabekasi.com"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://blogbekasimenara.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Share on Facebook"
@@ -27,7 +27,7 @@
             <i class="fa-brands fa-facebook-f"></i>
           </a>
           <a
-            href="https://twitter.com/intent/tweet?url=https://menarabekasi.com&text=Solusi%20Logistik%20Kayu%20Profesional"
+            href="https://twitter.com/intent/tweet?url=https://blogbekasimenara.vercel.app/&text=Solusi%20Logistik%20Kayu%20Profesional"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Share on X/Twitter"
@@ -36,7 +36,7 @@
             <i class="fa-brands fa-x-twitter"></i>
           </a>
           <a
-            href="https://wa.me/?text=Kunjungi%20PT%20Menara%20Bekasi%20https://menarabekasi.com"
+            href="https://wa.me/?text=Kunjungi%20PT%20Menara%20Bekasi%20https://blogbekasimenara.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Share on WhatsApp"
@@ -45,7 +45,7 @@
             <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a
-            href="https://www.linkedin.com/sharing/share-offsite/?url=https://menarabekasi.com"
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://blogbekasimenara.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Share on LinkedIn"
