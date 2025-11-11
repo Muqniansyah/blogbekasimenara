@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/background.JPG") center/cover no-repeat;
+  background: url("/background.jpg") center/cover no-repeat;
   background-attachment: fixed;
   overflow: hidden;
   padding: 2rem;
