@@ -20,11 +20,11 @@ export default defineNuxtConfig({
         "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
         "Content-Security-Policy":
           "default-src 'self'; " +
-          "img-src 'self' data: https: https://www.google-analytics.com; " +
-          "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'; " +
-          "style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; " +
+          "img-src 'self' data: https:; " +
+          "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; " +
+          "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; " +
           "font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; " +
-          "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://analytics.google.com; " +
+          "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; " +
           "frame-src 'self' https://www.googletagmanager.com;",
       },
     },
