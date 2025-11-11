@@ -44,14 +44,7 @@ import videoSrc from "../assets/video/pengiriman.mp4";
 
     <div class="video-side">
       <div class="video-wrapper">
-        <video
-          :src="videoSrc"
-          poster="/background.jpg"
-          controls
-          muted
-          autoplay
-          loop
-        ></video>
+        <video :src="videoSrc" controls muted autoplay loop></video>
       </div>
     </div>
   </section>

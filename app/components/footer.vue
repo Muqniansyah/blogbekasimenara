@@ -67,24 +67,15 @@
 </template>
 
 <script setup>
-// Pastikan Anda sudah mengimpor Font Awesome (fa-brands) di proyek Anda
+// Pastikan Font Awesome (fa-brands) sudah diimpor di layout utama
 </script>
 
 <style scoped>
-/* Variabel Warna Baru */
-:root {
-  --color-primary-accent: #ff9900; /* Oranye Emas / Kuning Kunyit */
-  --color-background-dark: #1f1f1f; /* Hitam Charcoal/Gelap */
-  --color-text-light: #f0f0f0;
-  --color-text-muted: #a0a0a0;
-}
-
-/* --- SECTION UTAMA & GLASSMORPHISM MINIMAL --- */
 .footer-section {
   position: relative;
   width: 100%;
-  background: var(--color-background-dark);
-  color: var(--color-text-light);
+  background: #1f1f1f; /* warna background gelap */
+  color: #f0f0f0; /* warna teks terang */
   padding-top: 5rem;
   overflow: hidden;
   font-family: "Inter", sans-serif;
@@ -99,18 +90,8 @@
     rgba(255, 153, 0, 0.2),
     transparent 60%
   );
-  /* animation: floatGradient 10s ease-in-out infinite alternate; */
   z-index: 0;
 }
-
-/* @keyframes floatGradient {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(10%, -10%) scale(1.1);
-  }
-} */
 
 .footer-container {
   position: relative;
@@ -125,11 +106,9 @@
   text-align: center;
 }
 
-/* --- TATA LETAK DESKTOP (3 KOLOM) --- */
 @media (min-width: 992px) {
   .footer-container {
     display: grid;
-    /* Brand | Navigasi (Baru) | Sharing (Baru) */
     grid-template-columns: 2.5fr 1fr 1.5fr;
     gap: 5rem;
     text-align: left;
@@ -144,7 +123,6 @@
   }
 }
 
-/* --- KOLOM BRAND --- */
 .footer-logo {
   width: 50px;
   height: 50px;
@@ -156,7 +134,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
-  color: var(--color-text-light);
+  color: #f0f0f0;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -164,26 +142,23 @@
 .footer-desc {
   margin: 0.5rem 0 0;
   font-size: 0.9rem;
-  color: var(--color-text-muted);
+  color: #a0a0a0;
   line-height: 1.6;
-  max-width: none;
 }
 
-/* --- NAVIGASI & SHARING BAR (BARU) --- */
 .nav-title {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--color-primary-accent); /* Warna aksen baru */
+  color: #ff9900; /* warna aksen oranye */
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Styling Khusus Sharing Bar */
 .footer-share p {
   margin-bottom: 1rem;
   font-weight: 400;
-  color: var(--color-text-muted);
+  color: #a0a0a0;
 }
 
 .share-buttons {
@@ -200,8 +175,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  color: var(--color-text-light);
-  /* Sentuhan glassmorphism: hanya latar belakang transparan */
+  color: #f0f0f0;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -212,7 +186,6 @@
   box-shadow: 0 0 20px rgba(255, 153, 0, 0.4);
 }
 
-/* Hover spesifik menggunakan warna merek */
 .social-icon.facebook:hover {
   background-color: #1877f2;
 }
@@ -226,7 +199,6 @@
   background-color: #0a66c2;
 }
 
-/* --- BOTTOM COPYRIGHT --- */
 .footer-bottom {
   margin-top: 3rem;
   padding: 1rem 1.5rem;
@@ -245,15 +217,13 @@
 
 .footer-bottom p {
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: #a0a0a0;
 }
 
-/* --- RESPONSIVITAS MOBILE --- */
 @media (max-width: 991px) {
   .footer-container {
     gap: 2.5rem;
   }
-  /* Rata tengah di mobile */
   .footer-share {
     text-align: center;
   }

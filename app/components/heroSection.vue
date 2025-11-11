@@ -1,5 +1,12 @@
+<script setup>
+import bg from "~/assets/img/background.jpg";
+</script>
+
 <template>
-  <header class="hero-container">
+  <header
+    class="hero-container"
+    :style="{ background: `url(${bg}) center/cover no-repeat` }"
+  >
     <div class="glass-card">
       <div class="hero-content">
         <div class="hero-text">
@@ -40,7 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/background.jpg") center/cover no-repeat;
   background-attachment: fixed;
   overflow: hidden;
   padding: 2rem;
