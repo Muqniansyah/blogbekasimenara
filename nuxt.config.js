@@ -19,7 +19,13 @@ export default defineNuxtConfig({
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
         "Content-Security-Policy":
-          "default-src 'self'; img-src 'self' data: https:; script-src 'self' https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:;",
+          "default-src 'self'; " +
+          "img-src 'self' data: https:; " +
+          "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'; " +
+          "style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; " +
+          "font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; " +
+          "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; " +
+          "frame-src 'self' https://www.googletagmanager.com;",
       },
     },
   },
