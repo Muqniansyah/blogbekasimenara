@@ -10,25 +10,28 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // ✅ Security Headers (SSR mode / Vercel)
-  routeRules: {
-    "/**": {
-      headers: {
-        "Strict-Transport-Security":
-          "max-age=15552000; includeSubDomains; preload",
-        "X-Content-Type-Options": "nosniff",
-        "Referrer-Policy": "strict-origin-when-cross-origin",
-        "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
-        "Content-Security-Policy":
-          "default-src 'self'; " +
-          "img-src 'self' data: https:; " +
-          "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; " +
-          "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; " +
-          "font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; " +
-          "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; " +
-          "frame-src 'self' https://www.googletagmanager.com;",
-      },
-    },
-  },
+  routeRules:
+    process.env.NODE_ENV === "production"
+      ? {
+          "/**": {
+            headers: {
+              "Strict-Transport-Security":
+                "max-age=15552000; includeSubDomains; preload",
+              "X-Content-Type-Options": "nosniff",
+              "Referrer-Policy": "strict-origin-when-cross-origin",
+              "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+              "Content-Security-Policy":
+                "default-src 'self'; " +
+                "img-src 'self' data: https:; " +
+                "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; " +
+                "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; " +
+                "font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; " +
+                "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; " +
+                "frame-src 'self' https://www.googletagmanager.com;",
+            },
+          },
+        }
+      : {},
 
   app: {
     head: {
@@ -132,7 +135,7 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          children: `
+          innerHTML: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
