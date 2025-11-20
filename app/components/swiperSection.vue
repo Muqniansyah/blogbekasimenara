@@ -54,11 +54,28 @@ const slides = [
     link: "https://kemaskayuindonesia.my.id/menarabekasi/",
   },
   {
-    img: "/slider/kemaskayu.png",
-    title:
-      "Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar ISPM #15!",
-    desc: "“Pastikan kemasan kayu Anda sudah sesuai aturan internasional agar ekspor tidak bermasalah.”",
-    link: "https://kemaskayuindonesia.my.id/",
+    img: "/slider/web-11.jpg",
+    title: "Mengenal Kayu Ramah Lingkungan dan Sertifikasi Hijau ",
+    desc: "“Ketahui cara mendukung ekspor hijau melalui penggunaan kayu ramah lingkungan.”",
+    link: "https://web-menarabks.vercel.app/",
+  },
+  {
+    img: "/slider/web-9.jpg",
+    title: "Pembuatan Pallet Kayu Ekspor: Proses dan Standar ISPM 15",
+    desc: "“Lihat bagaimana proses pengolahan kayu menjadi pallet ekspor yang memenuhi regulasi.”",
+    link: "https://blogwebmenara.vercel.app/",
+  },
+  {
+    img: "/slider/web-2.jpg",
+    title: "Pemilihan Jenis Kayu Tepat untuk Kelancaran Ekspor Internasional",
+    desc: "“Pelajari cara memilih jenis kayu terbaik agar ekspor Anda lancar dan sesuai standar ISPM 15.”",
+    link: "https://muqniansyah.github.io/menara-blog/",
+  },
+  {
+    img: "/slider/web-6.jpg",
+    title: "Pentingnya Vendor Berlisensi ISPM 15 dalam Ekspor Kayu",
+    desc: "“Pastikan Anda bekerja dengan vendor berizin resmi agar pengiriman kayu diterima global.”",
+    link: "https://muqniansyah.codeberg.page/bekasimenara/",
   },
 ];
 
